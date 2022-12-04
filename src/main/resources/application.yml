@@ -1,0 +1,19 @@
+server:
+  port: 8088
+
+
+
+
+logging:
+  level:
+    com.jyh.content.openfeign.UserService: debug
+
+# jwt自定义配置
+jwt:
+  expireTime: 1209600
+  tokenSecret: aaaaaaaaaabbbbbbbbbbbcccccccccccddddddd
+rocketmq:
+#  name-server: 43.143.20.115:9876
+  name-server: 47.96.31.161:9876
+  producer:
+    group: test-group
